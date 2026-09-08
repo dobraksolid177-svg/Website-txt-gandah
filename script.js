@@ -111,3 +111,36 @@ clearBtn.addEventListener(
   "click",
   bersihkan
 );
+
+/* =========================
+   BACKGROUND MUSIC
+========================= */
+
+const bgMusic = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+let musicPlaying = false;
+
+musicBtn.addEventListener("click", async () => {
+
+  if (!musicPlaying) {
+
+    try {
+      await bgMusic.play();
+
+      musicPlaying = true;
+      musicBtn.textContent = "⏸️ Matikan Musik";
+
+    } catch (error) {
+      alert("Musik gagal diputar.");
+    }
+
+  } else {
+
+    bgMusic.pause();
+
+    musicPlaying = false;
+    musicBtn.textContent = "🎵 Putar Musik";
+  }
+
+});
