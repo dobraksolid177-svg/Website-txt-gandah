@@ -360,3 +360,49 @@ footer {
     padding: 16px;
   }
 }
+
+/* =========================
+   MUSIC BUTTON
+========================= */
+
+.music-btn {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+
+  padding: 13px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+
+  color: white;
+  background: rgba(0, 0, 0, 0.45);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  font-size: 14px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.3);
+
+  transition: 0.25s;
+
+  z-index: 9999;
+}
+
+.music-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+.music-btn:active {
+  transform: scale(0.95);
+}
+
+.music-btn.playing {
+  box-shadow:
+    0 0 20px rgba(167, 139, 250, 0.6);
+}
