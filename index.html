@@ -11,15 +11,14 @@
 
 <body>
 
-  <div class="overlay"></div>
-
   <main class="container">
 
     <header class="header">
-      <h1>R&D_Rafi&Delpiana</h1>
+      <h1>R&D_Rafi&Delpiana ♥SAYANGG♥</h1>
       <p>Text Generator & Pengulang Pesan</p>
     </header>
 
+    <!-- TEXT GENERATOR -->
     <section class="form">
 
       <label for="pesan">📝 Pesan / Text</label>
@@ -37,7 +36,6 @@
         min="1"
         max="10000"
         value="10"
-        placeholder="Masukkan jumlah..."
       >
 
       <div class="buttons">
@@ -58,6 +56,8 @@
 
     </section>
 
+
+    <!-- HASIL -->
     <section class="result">
 
       <label for="hasil">📄 Hasil Text</label>
@@ -74,17 +74,49 @@
 
     </section>
 
-      <footer>
-    © 2026 R&D_Rafi&Delpiana
-  </footer>
 
-  <audio id="bgMusic" loop>
-    <source src="music.mp3" type="audio/mpeg">
-  </audio>
+    <!-- MUSIC -->
+    <section class="music-section">
 
-  <button id="musicBtn" class="music-btn">
-    🎵 Putar Musik
-  </button>
+      <div class="music-disc">
+        🎵
+      </div>
+
+      <h2>Sesi Potret</h2>
+
+      <p id="musicStatus">
+        Musik belum diputar
+      </p>
+
+      <audio id="bgMusic" preload="metadata">
+        <source src="sesi-potret.mp3" type="audio/mpeg">
+      </audio>
+
+      <button id="musicBtn" class="music-btn">
+        ▶️ Putar Musik
+      </button>
+
+    </section>
+
+
+    <!-- LIRIK -->
+    <section class="lyrics-section">
+
+      <h2>🎤 Lirik</h2>
+
+      <div class="lyrics-box">
+        <div id="lyricsContainer" class="lyrics-container">
+        </div>
+      </div>
+
+    </section>
+
+
+    <footer>
+      © 2026 R&D_Rafi&Delpiana ♥KHUSUS SAYANGGKUU♥
+    </footer>
+
+  </main>
 
   <script src="script.js"></script>
 
